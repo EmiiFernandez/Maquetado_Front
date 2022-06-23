@@ -1,0 +1,681 @@
+/*UTILIZO PANTALLA 1920 X 1080*/
+
+/*Navegador que se uso: Brave*/
+
+* {
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*Fondo Pastilla Top*/
+body {
+    background-image: url(../img/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: -10%;
+}
+
+/*HEADER*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 65px 150px;
+}
+
+.navHeader i {
+    display: none;
+}
+
+.navHeader ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.navHeader ul li {
+    margin-right: 2em;
+    list-style: none;
+}
+
+.navHeader ul li a {
+    text-decoration: none;
+    color: #242E52;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+.buttonNaranja {
+    font-weight: 400;
+    background-color: #F3603B;
+    border-radius: 50px;
+    box-shadow: 0px 4px 7px rgb(0 0 0 / 25%);
+    color: #FFFFFF;
+    border: none;
+    height: 3rem;
+    width: 8rem;
+    text-decoration: none;
+    text-align: center;
+    line-height: 3;
+}
+
+
+/*FONDO PASTILLA MAIN*/
+main {
+    background-image: url(../img/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-position-x: -30%;
+    background-position-y: 80%;
+}
+
+/*CONTENEDOR INICIAL*/
+#contenedorTop {
+    display: flex;
+    padding: 65px 150px;
+}
+
+#presentacionLeft {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+
+h1 {
+    font-size: 5em;
+    color: #232C50;
+    letter-spacing: -2px;
+    line-height: 1.1em;
+    width: 90%;
+    padding-bottom: 0.5em;
+}
+
+#presentacionLeft p {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #000000;
+    align-items: justify;
+    width: 62%;
+    padding-bottom: 2em;
+    line-height: 2em;
+}
+
+#presentacionLeft a {
+    height: 3rem;
+    width: 8rem;
+    line-height: 307%;
+}
+
+.tamañoTopRight {
+    width: 100vw;
+    height: 105%;
+}
+
+
+#contenedorMedio {
+    display: flex;
+    padding: 65px 150px;
+
+}
+
+#preguntaLeft {
+    width: 100vw;
+}
+
+#preguntaLeft h3 {
+    font-weight: 700;
+    font-size: 4em;
+    color: #232C50;
+    letter-spacing: -1px;
+    line-height: 1.1em;
+    width: 80%;
+    padding-bottom: 0.5em;
+}
+
+#preguntaLeft p {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #000000;
+    width: 62%;
+    padding-bottom: 2em;
+    line-height: 2em;
+}
+
+/*LISTA NUMERADA*/
+.listaNumerada {
+    font-size: 1.5em;
+    width: 100vw;
+}
+
+.listaNumerada ol {
+    line-height: 1.5em;
+    list-style-type: none;
+    counter-reset: li;
+    margin: 0;
+}
+
+.listaNumerada ol li {
+    position: relative;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 2em;
+    padding-left: 50px;
+    margin-bottom: 3%;
+    background: none;
+}
+/*Numeración con fondo en lista numerada*/
+.listaNumerada ol li:before {
+    content: '0' counter(li);
+    counter-increment: li;
+    position: absolute;
+    left: -5%;
+    font-weight: 500;
+    font-size: 0.8em;
+    padding: 18px 30px 10px 30px;
+    border-radius: 50px;
+    background: #F3603B;
+    color: #FFFFFF;
+    height: 1em;
+    line-height: 15px;
+}
+
+.listaNumerada li p {
+    font-weight: 700;
+    font-size: 0.8em;
+    color: #323851;
+    text-indent: 30px;
+    letter-spacing: -1px;
+    background-color: #f3603b33;
+    border-radius: 5px 15px 15px 5px
+}
+
+.listaNumerada dd {
+    font-weight: 400;
+    font-size: 1em;
+    color: #B3B2B7;
+    margin-left: 15%;
+    margin-bottom: 5%;
+    letter-spacing: -0.5px;
+}
+
+/*CARDS*/
+
+#contenedorFinalCards {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10em;
+    padding-left: 50px;
+    padding-right: 50px;
+    align-items: center;
+}
+
+#contenedorFinalCards h3 {
+    font-size: 2.5em;
+    color: #242E53;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+.conjuntoCards {
+    height: 15em;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding-bottom: 5em;
+    margin-bottom: 2%;
+}
+
+.cardAliBravo {
+    display: flex;    
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-end;
+    text-align: center;
+    height: 150%;
+    padding: 1px;
+    background-color: rgba(187, 186, 186, 0.151);
+    border: 5px solid #FAFAFA;
+}
+
+.cardAliBravo h4 {
+    display: relative;
+    bottom: 50%;
+    font-size: 1em;
+    font-weight: 700;
+    color: #3F4868;
+}
+
+.cardAliBravo p {
+    font-size: 1em;
+    font-weight: 500;
+    color: #B9B9C1;
+    line-height: 1.5em;
+    padding-top: 5%;
+    padding-bottom: 6%;
+}
+
+.cardAliBravo img {
+    position: relative;
+}
+
+img[alt="avatar-Anisha"] {
+    top: -13%;
+    right: 0%;
+    left: 43%;
+    height: 50%;
+    width: 15%
+}
+
+img[alt="avatar-Ali"] {
+    top: -13%;
+    right: 0%;
+    left: 44%;
+    height: 50%;
+    width: 13%
+}
+
+img[alt="avatar-Richard"] {
+    top: -13%;
+    right: 0%;
+    left: 42%;
+    height: 50%;
+    width: 15%
+}
+/*SVG PARA REPRESENTAR EL CARROUSEL. NONE PARA DESKTOP*/
+.iconocarrousel {
+    display: none;
+}
+/*FOOTER*/
+#footerInicial {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F3613C;
+    padding: 0px 150px;
+    width: 100vw;
+    height: 11em;
+}
+
+#footerInicial h2 {
+    font-size: 2em;
+    font-weight: 500;
+    color: #FFFFFF;
+    width: 30vw;
+    align-self: center;
+}
+
+.buttonBlanco {
+    color: #F3603B;
+    font-weight: 400;
+    background-color: #FFFFFF;
+    border-radius: 50px;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    border: none;
+    height: 44px;
+    width: 134px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 2.8em;
+    align-self: center;
+}
+
+#footerFinal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1E1E26;
+    width: 100vw;
+    height: 100%;
+    padding: 60px 150px;
+}
+
+#logoredes {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: space-between;
+    height: 80%;
+    align-self: center;
+}
+
+.ilogo {
+    height: 45%;
+    margin-bottom: 40%;
+}
+
+Icons {
+    display: flex;
+    justify-content: space-around;
+    color: #FFFFFF;
+}
+
+.contenedorLinks {
+    display: flex;
+    align-self: flex-start;
+    width: 20vw;
+    justify-content: space-between;
+
+}
+
+.linksinteres {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+.linksinteres li {
+    list-style: none;
+    height: 2em;
+}
+
+.linksinteres li a {
+    font-weight: 400;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+form {
+    display: flex;
+    height: auto;
+    align-self: flex-start;
+}
+/*INGRESO DE MAIL*/
+input[type="email"] {
+    border-radius: 50px;
+    width: 18em;
+    text-indent: 10%;
+}
+/*BOTON SUBMIT*/
+input[value="Go"] {
+    display: flex;
+    font-weight: 500;
+    background-color: #F3603B;
+    border-radius: 50px;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+    border: none;
+    height: 3rem;
+    width: 5rem;
+    justify-content: space-evenly;
+    margin-left: 7px;
+    transition: all;
+    transition-duration: 1s;
+}
+
+.cformcopyright {
+    display: flex;
+    flex-direction: column;
+    align-items: self-end;
+    align-self: flex-start;
+}
+
+.cformcopyright p {
+    font-size: 0.8em;
+    font-weight: 500;
+    color: #8C8C94;
+    justify-content: flex-end;
+    background-color: #1E1E26;
+    margin-top:5.3em;
+}
+
+    /*Pseudoclases*/
+
+    .navHeader ul li a:hover {
+        color: #B3B2B7;
+    }
+    
+    .buttonNaranja:hover {
+        background-color: #f3603bd2;
+        cursor: pointer;
+        animation: moveup 1s;
+    }
+    
+    .buttonBlanco:hover {
+        background-color: rgb(233, 233, 233);
+        cursor: pointer;
+        animation: moveup 1s;
+        
+    }
+    
+    .redesSociales:hover {
+        color: #F3603B;
+        cursor: pointer;
+        animation: cambiocolorescala 1s;
+    }
+
+    ul li:hover {
+        animation: resaltadolinks 1s;
+    }
+
+    .linksinteres a:hover {
+        color: #F3603B;
+        cursor: pointer;
+    }
+
+    input[type="email"] {
+        cursor: pointer;
+        outline-color: none;
+        outline-width: 0px;
+        outline-style: none;
+    }
+
+    input[type="email"]:hover {
+        border: 2px solid #F3603B;
+        color: #242E52;
+    }
+
+    input[type="email"]:focus {
+        border: 2px solid #F3603B;
+    }
+
+    input[type="email"]:invalid {
+        border: 2px solid #F3603B;
+    }
+
+    input[value="Go"]:hover {
+        background-color: white;
+        color: #1E1E26;
+        cursor: pointer;
+        animation: moveup 2s;
+    }
+
+
+/*Animaciones*/
+
+@keyframes cambiocolorescala  {
+/*redes sociales*/  
+    0% {}
+    50%{transform: scale(1.5);}	
+    100%{transform: scale(1.1);}
+}
+
+@keyframes moveup {
+/*Botones se deslizan arriba*/
+    0% {}
+    50%{transform: translateY(-5%);} 
+    100%{}   
+}
+
+@keyframes resaltadolinks  {
+/*los links seleccionados se amplian*/
+    0% {}
+    50%{transform: scale(1.2);}	
+    100%{}
+}
+
+/*Mobile 375px*/
+
+/*Si pongo en el media 375, se rompe*/
+
+@media (max-width: 376px) {
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .navHeader ul {
+        display: none;
+
+    }
+
+    .navHeader i {
+        display: flex;
+        cursor: pointer;
+
+    }
+
+    header .buttonNaranja {
+        display: none;
+    }
+
+    #contenedorTop {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100vw;
+        padding: 20px;
+    }
+
+    #presentacionLeft {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100vw;
+        padding: 20px;
+        font-size: 0.7em;
+        text-align: center;
+    }
+
+    #preguntaLeft {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        padding: 20px;
+        font-size: 0.7em;
+        text-align: center;
+        padding-top: 80%;
+    }
+
+
+    #presentacionLeft h1 {
+        width: 100vw;
+    }
+
+    #presentacionLeft p {
+        width: 90vw;
+        font-size: 1.3em;
+    }
+
+    #contenedorMedio {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    #preguntaLeft h3, #preguntaLeft p {
+        width: 100vw;
+    }
+
+    #contenedorFinalCards {
+        padding-bottom: 20%;
+    }
+
+    .ocultarcard {
+        display: none;
+    }
+
+    img[alt="avatar-Ali"] {
+        top: -12%;
+        height: 32%;
+        width: 30%;
+        left: 36%;
+    }
+
+
+    .ocultar {
+        display: none;
+    }
+
+    .iconocarrousel {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 30px;
+        padding-top: 40px;
+        cursor: pointer;
+    }
+
+    #footerInicial {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        height: 320px;
+        justify-content: flex-start;
+    }
+
+    #footerInicial h2 {
+        width: 73vw;
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .buttonBlanco {
+        width: 44vw;
+    }
+
+    #footerFinal {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        padding: 20px;
+        padding-bottom: 20%;
+    }
+    
+
+    #logoredes {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-self: center;
+        transform: translateY(-25%);
+    }
+
+    .ilogo {
+        display: flex;
+        height: 30%;
+        margin-top: 15%;
+        margin-bottom: 0;
+        align-self: center;
+    }
+
+    #logoredes Icons {
+        display: flex;
+        width: 100vw;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 5%;
+    }
+
+
+    .contenedorLinks {
+        display: flex;
+        align-self: center;
+        width: 100vw;
+        justify-content: space-around;
+        padding: 20px;
+        transform: translateY(-25%);
+    }
+
+.cformcopyright p {
+    transform: translate(-15%, 2000%);
+}
+
+}
